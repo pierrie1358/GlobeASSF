@@ -1,0 +1,163 @@
+@font-face {
+    font-family: landslide;
+    src: url('./slick-master/slick/fonts/Silent Landfield.ttf');
+  }
+
+
+  html, body {
+    margin: 0;
+   
+    padding: 0;
+  }
+  .centered {
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+}
+
+
+
+  * {
+    box-sizing: border-box;
+  }
+
+  .slider {
+      width: 50%;
+      
+      /* margin: 100px auto; */
+  }
+
+  .slick-slide {
+    margin: 0px 20px;
+    
+  }
+
+  .slick-slide img {
+    width: 100%;
+  }
+
+  .slick-prev:before,
+  .slick-next:before {
+    
+    color: black;
+  }
+
+
+  .slick-slide {
+    transition: all ease-in-out .3s;
+    opacity: .2;
+  }
+  
+  .slick-active {
+    opacity: .5;
+  }
+
+  .slick-current {
+    opacity: 1;
+  }
+
+
+  #landtitle
+  {
+    color:black; 
+    font-family:Montserrat ;
+    font-size:3vw;
+    text-align: center;
+    margin-bottom:-3px;
+  }
+
+  @media (max-device-width : 600px) {
+    #slidetext {
+       
+     color:black; 
+     font-family:Montserrat ;
+     font-size: 5pt;
+     text-align:center;
+     margin-bottom: -3px;
+     overflow-y: hidden;
+     z-index: 2;
+     position: relative;
+     }
+
+     #rotatingGlobe
+     {
+       width: 70%;
+       background-color: white; 
+       outline:10px white solid ;
+
+       height: auto; 
+       cursor: move; 
+       /* float: left;  */
+       position: relative;
+       z-index: 3000; 
+       margin-left: 30% ; 
+       margin-top:0;
+     }
+     .lazy
+     {
+       /* float:right;  */
+       margin-right: 25%;
+       z-index: 1;
+       position: relative;
+       overflow: hidden;
+       
+       
+       /* position: :absolute; */
+
+     }
+
+     #myCanvas
+     {
+       position: fixed;
+       z-index: 2000;
+      
+   
+     }
+    
+   }
+  #myCanvas
+  {
+    position: fixed;
+    z-index: 3;
+    
+
+
+  }
+
+  #slidetext
+  {
+    color:black; 
+    font-family:Open Sans ;
+    font-weight: 900;
+    font-size:2.4vw;
+    text-align:left;
+    margin-bottom: -3px;
+  }
+
+  #rotatingGlobe
+  {
+    width: 60vw;
+    background-color: white; 
+    height: auto; 
+  
+    cursor: move; 
+    float: left; 
+    position: relative;
+    z-index: 3; 
+    margin-left: 20% ; 
+    margin-top:0;
+  }
+  .lazy
+  {
+    float: right; 
+    /* margin-right: 5%; */
+    position: relative;
+    overflow-x: hidden;
+    display: inline-block;
+    
+    /* margin-top: 50%; */
+    /* position: :absolute; */
+    z-index: 1;
+  }
+  
