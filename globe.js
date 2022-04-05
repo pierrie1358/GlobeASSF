@@ -18,7 +18,7 @@
 $.ajaxSettings.async = false;
 var countries;
  var country_pings;
- var desired_countries=["Nepal","China","Japan","India","Netherlands","Italy"];
+ var desired_countries=["Nepal","China","Japan","India","Netherlands","Italy","Mexico"]; // Hier kunnen de landen toegevoegd worden waar pings aan toegevoegd moeten worden, plekken waar we zijn geweest
  var lat = [];
  var lng = [];
  var wdth=window.screen.width;
@@ -156,7 +156,7 @@ var globe = planetaryjs.planet();
       };
     };
   
- 
+    // Dit is de functie om naar een specifiek land te gaan
     function goto_australia(lt) {
                   if(wdth>700){
                   var ltas=lt-1;
