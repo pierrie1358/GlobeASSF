@@ -22,6 +22,13 @@
     <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
     <link href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
 
+    
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script type='text/javascript' src='https://d3js.org/d3.v3.min.js'></script>
+  <script type='text/javascript' src='https://d3js.org/topojson.v1.min.js'></script>
+  <script type='text/javascript' src='planetaryjs.js'></script>
+  <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
+
     <!-- Customized Bootstrap Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
 </head>
@@ -146,14 +153,19 @@
             <div class="row">
                 <div class="col-lg-6" style="min-height: 500px;">
                     <div class="position-relative h-100">
-                        <img class="position-absolute w-100 h-100" src="img/about.jpg" style="object-fit: cover;">
+                        <div class="man1">      
+                          <!--Create globe-->  
+                          <canvas id='rotatingGlobe' width='400' height='400'></canvas>
+                          <script type='text/javascript' src='globe.js?v=1'></script>
+                          </div>
+                        
                     </div>
                 </div>
                 <div class="col-lg-6 pt-5 pb-lg-5">
                     <div class="about-text bg-white p-4 p-lg-5 my-lg-5">
-                        <h6 class="text-primary text-uppercase" style="letter-spacing: 5px;">About Us</h6>
-                        <h1 class="mb-3">We Provide Best Tour Packages In Your Budget</h1>
-                        <p>Dolores lorem lorem ipsum sit et ipsum. Sadip sea amet diam dolore sed et. Sit rebum labore sit sit ut vero no sit. Et elitr stet dolor sed sit et sed ipsum et kasd ut. Erat duo eos et erat sed diam duo</p>
+                        <h6 class="text-primary text-uppercase" style="letter-spacing: 5px;">Over Ons</h6>
+                        <h1 class="mb-3">Onze missie </h1>
+                        <p>Het ASSF is in 1993 opgericht door de ‘Founding Fathers’ van Audumla en tijdens het vijfde lustrum als geschenk aan het dispuut geboden. De naam ‘Silveren Seepaerd’ refereert aan het illustere hotel waar het dispuut in 1968 werd opgericht.</p>
                         <div class="row mb-4">
                             <div class="col-6">
                                 <img class="img-fluid" src="img/about-1.jpg" alt="">
