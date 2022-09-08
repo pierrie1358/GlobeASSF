@@ -18,7 +18,7 @@
 $.ajaxSettings.async = false;
 var countries;
  var country_pings;
- var desired_countries=["Nepal","China","Japan","India","Netherlands","Italy","Mexico"]; // Hier kunnen de landen toegevoegd worden waar pings aan toegevoegd moeten worden, plekken waar we zijn geweest
+ var desired_countries=["Nepal","Sri Lanka","Vietnam","South Africa","Brazil","Australia","Nicaragua","New Zealand","Mexico","United States","United Kingdom","United Arab Emirates","China","Spain","Philippines","Thailand","Zambia","Hong Kong","India","Lithuania"]; // Hier kunnen de landen toegevoegd worden waar pings aan toegevoegd moeten worden, plekken waar we zijn geweest
  var lat = [];
  var lng = [];
  var wdth=window.screen.width;
@@ -46,13 +46,13 @@ var globe = planetaryjs.planet();
     // (world-110m-withlakes.json) so we can render lakes.
     globe.loadPlugin(planetaryjs.plugins.earth({
       topojson: { file:   'world-110m-withlakes.json' },
-      oceans:   { fill:   '#20639B' },
-      land:     { fill:   '#ffffff' },
-      borders:  { stroke: '#cccccc' } //#f7931e 08a0cc
+      oceans:   { fill:   '#e9f6e5' },
+      land:     { fill:   '#7ab630' },
+      borders:  { stroke: '#84d1c6' } //#f7931e 08a0cc
     }));
     // Load our custom `lakes` plugin to draw lakes; see below.
     globe.loadPlugin(lakes({
-      fill: '#20639B'
+      fill: '#e9f6e5'
     }));
     // The `pings` plugin draws animated pings on the globe.
     globe.loadPlugin(planetaryjs.plugins.pings());
@@ -100,7 +100,7 @@ var globe = planetaryjs.planet();
       //   globe.plugins.pings.add(lng[i], lat[i], { color: color, ttl: 2000, angle: Math.random() * 10 });
       // }
       
-    }, 800);
+    }, 50);
   
     var canvas = document.getElementById('rotatingGlobe');
     
