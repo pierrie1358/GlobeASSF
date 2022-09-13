@@ -1,3 +1,6 @@
+<?php
+    date_default_timezone_set('Europe/Amsterdam')
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -274,29 +277,33 @@
                     <!-- Comment Form Start -->
                     <div class="bg-white mb-3" style="padding: 30px;">
                         <h4 class="text-uppercase mb-4" style="letter-spacing: 5px;">Leave a comment</h4>
+                        <?php
+                        echo "
                         <form>
-                            <div class="form-group">
-                                <label for="name">Name *</label>
-                                <input type="text" class="form-control" id="name">
+                            <div class='form-group'>
+                                <label for='name'>Name *</label>
+                                <input type='text' class='form-control' id='name'>
                             </div>
-                            <div class="form-group">
-                                <label for="email">Email *</label>
-                                <input type="email" class="form-control" id="email">
+                            <div class='form-group'>
+                                <label for='email'>Email *</label>
+                                <input type='email' class='form-control' id='email'>
                             </div>
-                            <div class="form-group">
-                                <label for="website">Website</label>
-                                <input type="url" class="form-control" id="website">
+                            <input type='hidden' name='date' value='".date('Y-m-d H:i:s')."'
+                            <div class='form-group'>
+                                <label for='website'>Website</label>
+                                <input type='url' class='form-control' id='website'>
                             </div>
     
-                            <div class="form-group">
-                                <label for="message">Message *</label>
-                                <textarea id="message" cols="30" rows="5" class="form-control"></textarea>
+                            <div class='form-group'>
+                                <label for='message'>Message *</label>
+                                <textarea id='message' cols='30' rows='5' class='form-control'></textarea>
                             </div>
-                            <div class="form-group mb-0">
-                                <input type="submit" value="Leave a comment"
-                                    class="btn btn-primary font-weight-semi-bold py-2 px-3">
+                            <div class='form-group mb-0'>
+                                <input type='submit' value='Leave a comment'
+                                    class='btn btn-primary font-weight-semi-bold py-2 px-3'>
                             </div>
-                        </form>
+                        </form> "
+                        ?>
                     </div>
                     <!-- Comment Form End -->
                 </div>
@@ -326,52 +333,8 @@
                         </div>
                     </div>
     
-                    <!-- Search Form -->
-                    <div class="mb-5">
-                        <div class="bg-white" style="padding: 30px;">
-                            <div class="input-group">
-                                <input type="text" class="form-control p-4" placeholder="Keyword">
-                                <div class="input-group-append">
-                                    <span class="input-group-text bg-primary border-primary text-white"><i
-                                            class="fa fa-search"></i></span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Category List -->
-                    <div class="mb-5">
-                        <h4 class="text-uppercase mb-4" style="letter-spacing: 5px;">Categories</h4>
-                        <div class="bg-white" style="padding: 30px;">
-                            <ul class="list-inline m-0">
-                                <li class="mb-3 d-flex justify-content-between align-items-center">
-                                    <a class="text-dark" href="#"><i class="fa fa-angle-right text-primary mr-2"></i>Web
-                                        Design</a>
-                                    <span class="badge badge-primary badge-pill">150</span>
-                                </li>
-                                <li class="mb-3 d-flex justify-content-between align-items-center">
-                                    <a class="text-dark" href="#"><i class="fa fa-angle-right text-primary mr-2"></i>Web
-                                        Development</a>
-                                    <span class="badge badge-primary badge-pill">131</span>
-                                </li>
-                                <li class="mb-3 d-flex justify-content-between align-items-center">
-                                    <a class="text-dark" href="#"><i
-                                            class="fa fa-angle-right text-primary mr-2"></i>Online Marketing</a>
-                                    <span class="badge badge-primary badge-pill">78</span>
-                                </li>
-                                <li class="mb-3 d-flex justify-content-between align-items-center">
-                                    <a class="text-dark" href="#"><i
-                                            class="fa fa-angle-right text-primary mr-2"></i>Keyword Research</a>
-                                    <span class="badge badge-primary badge-pill">56</span>
-                                </li>
-                                <li class="d-flex justify-content-between align-items-center">
-                                    <a class="text-dark" href="#"><i
-                                            class="fa fa-angle-right text-primary mr-2"></i>Email Marketing</a>
-                                    <span class="badge badge-primary badge-pill">98</span>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
+                 
+                   
     
                     <!-- Recent Post -->
                     <div class="mb-5">
@@ -399,19 +362,7 @@
                         </a>
                     </div>
     
-                    <!-- Tag Cloud -->
-                    <div class="mb-5">
-                        <h4 class="text-uppercase mb-4" style="letter-spacing: 5px;">Tag Cloud</h4>
-                        <div class="d-flex flex-wrap m-n1">
-                            <a href="" class="btn btn-light m-1">Design</a>
-                            <a href="" class="btn btn-light m-1">Development</a>
-                            <a href="" class="btn btn-light m-1">Marketing</a>
-                            <a href="" class="btn btn-light m-1">SEO</a>
-                            <a href="" class="btn btn-light m-1">Writing</a>
-                            <a href="" class="btn btn-light m-1">Consulting</a>
-                        </div>
-                    </div>
-                </div>
+                 
             </div>
         </div>
     </div>
