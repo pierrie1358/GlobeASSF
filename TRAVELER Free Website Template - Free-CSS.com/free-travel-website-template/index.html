@@ -26,7 +26,7 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script type='text/javascript' src='https://d3js.org/d3.v3.min.js'></script>
   <script type='text/javascript' src='https://d3js.org/topojson.v1.min.js'></script>
-  <script type='text/javascript' src='planetaryjs.js?v=1'></script>
+  <script type='text/javascript' src='js/planetaryjs.js?v=1'></script>
   <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
 
     <!-- Customized Bootstrap Stylesheet -->
@@ -41,29 +41,11 @@
                 <div class="col-lg-6 text-center text-lg-left mb-2 mb-lg-0">
                     <div class="d-inline-flex align-items-center">
                         <p><i class="fa fa-envelope mr-2"></i>bestuur@assf.nl</p>
-                        <p class="text-body px-3">|</p>
+                        
                         
                     </div>
                 </div>
-                <div class="col-lg-6 text-center text-lg-right">
-                    <div class="d-inline-flex align-items-center">
-                        <a class="text-primary px-3" href="">
-                            <i class="fab fa-facebook-f"></i>
-                        </a>
-                        <a class="text-primary px-3" href="">
-                            <i class="fab fa-twitter"></i>
-                        </a>
-                        <a class="text-primary px-3" href="">
-                            <i class="fab fa-linkedin-in"></i>
-                        </a>
-                        <a class="text-primary px-3" href="">
-                            <i class="fab fa-instagram"></i>
-                        </a>
-                        <a class="text-primary pl-3" href="">
-                            <i class="fab fa-youtube"></i>
-                        </a>
-                    </div>
-                </div>
+                
             </div>
         </div>
     </div>
@@ -145,7 +127,9 @@
                         <div class="man1">      
                           <!--Create globe-->  
                           <canvas id='rotatingGlobe' width='400' height='400' style="padding-top:80px ;"></canvas>
-                          <script type='text/javascript' src='globe.js?v=3'></script>
+                          
+                          <script type='text/javascript' src='js/globe.js?v=3'></script>
+                          
                           </div>
                         
                     </div>
@@ -155,6 +139,7 @@
                         <h6 class="text-primary text-uppercase" style="letter-spacing: 5px;">Over Ons</h6>
                         <h1 class="mb-3">Onze missie </h1>
                         <p>Het fonds is opgericht om de Audumla-leden te stimuleren om naast hun studie nog iets totaal anders te ondernemen. Centraal moet wel staan de ontmoeting met een andere cultuur. </p>
+                        <p>Kijk op de wereld bol om te zien op welke plekken mensen namens ASSF zijn geweest!!</p>
                         <div class="row mb-4">
                             <div class="col-6">
                                 <img class="img-fluid" src="img/about-1.jpg" alt="">
@@ -189,6 +174,7 @@
 
                         <h5 class="mb-2">Bestemming</h5>
                         <p class="m-0">Kies je bestemming uit! Geen land is te gek of te saai.</p>
+                        
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 mb-4">
@@ -208,9 +194,17 @@
 
                 <div class="col-lg-4 col-md-6 mb-4">
                     <div class="service-item bg-white text-center mb-2 py-5 px-4">
+                        <i class="fa fa-2x fa-handshake mx-auto mb-4"></i>
+                        <h5 class="mb-2">Krijg groenlicht!</h5>
+                        <p class="m-0">De beste voorstellen krijgen een akkoord en krijgen het geld om op reis te gaan.</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="service-item bg-white text-center mb-2 py-5 px-4">
                         <i class="fa fa-2x fa-plane-departure mx-auto mb-4"></i>
                         <h5 class="mb-2">Reis</h5>
-                        <p class="m-0">Ga op reis en geniet</p>
+                        <p class="m-0">Ga op reis en geniet.</p>
                     </div>
                 </div>
 
@@ -222,6 +216,8 @@
                         <p class="m-0">Nadat je je reis gemaakt hebt, maak je een presentatie zodat jou sponsoren, jou avonturen en lessen mee kunnen krijgen</p>
                     </div>
                 </div>
+
+               
 
             </div>
         </div>
@@ -241,7 +237,7 @@ g
                 <div class="col-lg-4 col-md-6 mb-4">
                     <div class="destination-item position-relative overflow-hidden mb-2">
                         <img class="img-fluid" src="img/Bestemmingen/Nepal.jpg" alt="">
-                        <a class="destination-overlay text-white text-decoration-none" href="">
+                        <a class="destination-overlay text-white text-decoration-none" href="Verhalen/Nepal.html">
                             <h5 class="text-white">Nepal</h5>
                             <span>2018</span>
                         </a>
@@ -250,7 +246,7 @@ g
                 <div class="col-lg-4 col-md-6 mb-4">
                     <div class="destination-item position-relative overflow-hidden mb-2">
                         <img class="img-fluid" src="img/Bestemmingen/Sri lanka.JPG" alt="">
-                        <a class="destination-overlay text-white text-decoration-none" href="">
+                        <a class="destination-overlay text-white text-decoration-none" href="Verhalen/Sri_Lanka.html">
                             <h5 class="text-white">Sri lanka</h5>
                             <span>2012</span>
                         </a>
@@ -301,8 +297,8 @@ g
     <div class="container-fluid py-5">
         <div class="container py-5">
             <div class="text-center mb-3 pb-3">
-                <h6 class="text-primary text-uppercase" style="letter-spacing: 5px;">Testimonial</h6>
-                <h1>Uitgevoerde opdrachten</h1>
+                <h6 class="text-primary text-uppercase" style="letter-spacing: 5px;">Testimonials</h6>
+                <h1>Reizigers</h1>
             </div>
             <div class="owl-carousel testimonial-carousel">
                 <div class="text-center pb-4">
@@ -348,7 +344,7 @@ g
 
 
     <!-- Blog Start -->
-    <div class="container-fluid py-5">
+    <!-- <div class="container-fluid py-5">
         <div class="container pt-5 pb-3">
             <div class="text-center mb-3 pb-3">
                 <h6 class="text-primary text-uppercase" style="letter-spacing: 5px;">Our Blog</h6>
@@ -414,7 +410,7 @@ g
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
     <!-- Blog End -->
 
 

@@ -1,0 +1,300 @@
+<!-- <?php
+    date_default_timezone_set('Europe/Amsterdam')
+?> -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>TRAVELER - Free Travel Website Template</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Free HTML Templates" name="keywords">
+    <meta content="Free HTML Templates" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet"> 
+
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type='text/javascript' src='https://d3js.org/d3.v3.min.js'></script>
+    <script type='text/javascript' src='https://d3js.org/topojson.v1.min.js'></script>
+    <script type='text/javascript' src='js/planetaryjs.js?v=1'></script>
+    <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
+  
+</head>
+
+<body>
+      <!-- Topbar Start -->
+      <div class="container-fluid bg-light pt-3 d-none d-lg-block">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 text-center text-lg-left mb-2 mb-lg-0">
+                    <div class="d-inline-flex align-items-center">
+                        <p><i class="fa fa-envelope mr-2"></i>bestuur@assf.nl</p>
+                        
+                        
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    <!-- Topbar End -->
+
+
+  <!-- Navbar Start -->   
+  <div class="container-fluid position-relative nav-bar p-0">
+    <div class="container-lg position-relative p-0 px-lg-3" style="z-index: 9;">
+        <nav class="navbar navbar-expand-lg bg-light navbar-light shadow-lg py-3 py-lg-0 pl-3 pl-lg-5">
+            <a href="" class="navbar-brand">
+                <img src="img/logo.png">
+
+            </a>
+            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-between px-3" id="navbarCollapse">
+                <div class="navbar-nav ml-auto py-0">
+                    <a href="index.html" class="nav-item nav-link active">Home</a>
+                    <a href="about.html" class="nav-item nav-link">Over ons</a>
+                    <a href="blog.html" class="nav-item nav-link">Blog</a>
+                    <a href="contact.html" class="nav-item nav-link">Contact</a>
+                </div>
+            </div>
+        </nav>
+    </div>
+</div>
+<!-- Navbar End -->
+
+
+    <!-- Header Start -->
+    <div class="container-fluid page-header">
+        <div class="container">
+            <div class="d-flex flex-column align-items-center justify-content-center" style="min-height: 400px">
+                <h3 class="display-4 text-white text-uppercase">Blog Detail</h3>
+                <div class="d-inline-flex text-white">
+                    <p class="m-0 text-uppercase"><a class="text-white" href="">Home</a></p>
+                    <i class="fa fa-angle-double-right pt-1 px-3"></i>
+                    <p class="m-0 text-uppercase">Blog Detail</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Header End -->
+
+
+    
+
+    <!-- Blog Start -->
+    <div class="container-fluid py-5">
+        <div class="container py-5">
+            <div class="row">
+                <div class="col-lg-12">
+                    <!-- Blog Detail Start -->
+                    <div class="pb-3">
+                        <div class="blog-item">
+                            <div class="position-relative">
+                                <div class="row">  
+                                    <div class="col-lg-4">    
+                                    <!--Create globe-->  
+                                    <canvas id='rotatingGlobe' width='400' height='400' style="padding-top:40px ;"></canvas>
+                                    <script type='text/javascript' src='js/globe.js?v=3'></script>
+                                    <script>goto_australia(9)
+                                        goto_australia2(0)
+                                    </script>
+                                </div>
+                                <div class="col-lg-8">
+                                    <img class="img-fluid w-80" src="img/Bestemmingen/Sri-Lanka-boeddhisme.jpg" alt="">   
+                                    
+                                </div>   
+                                </div>
+                                
+                                <div class="blog-date">
+                                    <h6 class="font-weight-bold mb-n1">2013</h6>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bg-white mb-3" style="padding: 60px;">
+                            <div class="d-flex mb-3">
+                                <a class="text-primary text-uppercase text-decoration-none" href="">Admin</a>
+                                <span class="text-primary px-2">|</span>
+                                <a class="text-primary text-uppercase text-decoration-none" href="">Tours & Travel</a>
+                            </div>
+                            <h2 class="mb-3">SRI LANKA LUSTRUM REIS</h2>
+                            <h4 class="mb-3">Reis verslag</h4>
+                            <img class="img-fluid w-50 float-right mr-4 mb-2" src="img/Bestemmingen/Vehalen/Foto boek Sri lanka.JPG">
+                            <p>Van 26 juli t/m 10 augustus 2013 zijn we met 17 man sterk op lustrumreis geweest om het 45 jarige bestaan van de club te vieren. Voor velen was de bestemming tot aankomst op Schiphol Airport nog onbekend. Aldaar werd het dan toch duidelijk dat niet India en Myanmar de bestemming gingen worden maar… SRI LANKA, Pöckl had het uiteindelijk toch goed geprikt! Na een ontspannen vlucht in de A380 met overstap in Dubai arriveerde we in s’ochtends in Colombo, de ‘commerciële’ hoofdstad van Sri Lanka. Hier ontmoetten we Shyam (onze gids), Big Belly Buddha (de tassen drager) en onze chauffeur we werden naar onze eigen prive bus gebracht. De reis kan beginnen!
+                            </p>
+                            <p>Vanaf het vliegveld reden we naar het vissersdorpje Negombo. Na wat slaap te hebben ingehaald op het strand en de eerste duik van de vakantie gingen we op excursie in het stadje om de eerste indrukken op te doen. Opvallende was de vele vis die lag te drogen op het strand en op de vismarkt en de Nederlandse invloeden nog goed terug te zien zijn in het straatbeeld. De  grachten en gebouwen die vanaf 1640 gebouwd zijn tijdens de Nederlandse kolonisatie sprongen direct in het oog. Daarnaast was het ouder fort omgebouwd tot gevangenis maar door gids nog steeds bestempeld als onneembaar; ‘easy to check-in, difficult to check-out’. En zo was meteen de eerste quote van de trip geboren. 
+                            </p>
+                            <p>De volgende morgen lieten we de kust achter ons en trokken we het binnenland in om de Cave-temple nabij Dambulla te bezoeken. Zoals de naam al zegt is deze tempel bijzonder omdat hij helemaal uit een rotswand is gehakt, in de verschillende grotten en nissen staan tientallen grote Boeddha beelden. Na deze eerste kennismaking met het boeddhisme reden we door naar ons hotel waar we overdag een mountainbike toch maakte en ’s avonds een BBQ hielden. Hierbij werd meteen duidelijk dat de 17 studenten uit Nederland toch wat meer bier drinken en peuken roken dan de gemiddelde toerrist en moesten de hotelmedewerkers bij iedereen in de omgeving langs om de voorraden te plunderen. Hierna heeft Shyam al de hotels en restaurants gebeld waar we deze reis nog naar toe zouden gaan om te waarschuwen dat we zouden komen om er voor te zorgen dat er voldoende bier in huis was. De beste sjaars in jaren!
+                            </p>
+                            <img class="img-fluid w-50 float-left mr-4 mb-2" src="img/Bestemmingen/Vehalen/Foto boek Sri lanka 2.JPG">
+                            <p>Op dag drie stonden we met een flinke kater en frisse tegenzin op om Sigiriya Rock Fortress bezoeken. De kater was al sneeuw in de brandende Sri Lankaanse zon verdwenen toen we  deze 200 meter hoge  Unesco werelderfgoed site hadden beklommen. Het uitzicht over de omgeving met eeuwenoude Koninklijke tuinen, zwembaden en grachten was een adembenemend en het is te begrijpen dat dit de plek is waar vroeger het koninklijk paleis heeft gestaan. Op de terugweg bleek dat de  vroegere koning het pad omlaag had laten versieren met naakt schilderingen van zijn favoriete vrouwen. Bekaf van de beklimming van die ochtend hebben we gechilld aan het zwembad en ’s avonds een ‘Beer-Pong’ toernooi opgezet. Hier werd maar weer eens al te goed duidelijk hoe fanatiek sommige Audumla’s kunnen zijn als het gaat om ‘winnen’! Uiteindelijk is Docty er met de winst vandoor gegaan maar gingen een aantal andere toch met sippe gezichtjes naar bed. 
+                            </p>
+                            <p>De volgende halte was Kandy waar we een van de meest belangrijke boeddhistische tempel van de wereld bezochten: de Temple of Tooth. De plaatselijke bevolking geloofd dat hier de tand van Boeddha bewaard ligt en daarom hebben ze een vrij indrukwekkende houten tempel gebouwd. Maar wat ons in Kandy allemaal het meest bij zal blijven zijn de vele wetkantoren waar op honden en paarde racen gewet kan worden.  Vooral Twat onze platina member van het Holland Casino kon zich hier helemaal uitleven vergokte al zijn zakgeld voor de komende week. Vanuit Kandy namen we de trein naar Horton Plains voor een van de mooiste treintrajecten ter wereld, Railaway in het echt, zeer indrukwekkend! Maar we hadden onze dosis natuur nog niet gehad want voor we konden gaan chillen in onze blokhutjes bij de rafters retreat  stond er nog een pittige rafttocht over de rivier op het programma met als hoogte punt de brug waar de Hollywood klassieker Bridge over the river Kwai is opgenomen. Opnieuw werden we ondergedompeld in de schoonheid van de Sri Lankaanse jungle. De keerzijde van de jungle werd ons ook duidelijk door de enorme spinnen in onze douches en de dodelijke slangen onder de ontbijt tafel.
+                            </p>
+                            <p>Next stop: Nuwara Eliya, dit plaatsje ligt op zo’n 2.000 meter hoogte midden in de bergen. Omdat het hier koud regenachtig en mistig is was deze stad vroeger in trek bij rijke Britse kolonisten met heimwee. Dit zorgt ervoor dat Nuwara Eliya nog steeds de grandeuren de  vergane glorie van het Britse rijk uitademt. Hier hebben we ons dan ook even gedragen als de corpsballetjes: een rondje golfen voor de sportievelingen en ’s avonds  jasje-dasje diner in ‘The Hill Club’ met afsluitende cognac en sigaren in de ‘The Gentlemans lounche’. De volgende ochtend moesten we vroeg op om te worden geconfronteerd met de grootse deceptie van de reis. Na een wandeltocht van een paar uur arriveerde we bij ‘Worlds End’, dit uitkijk punt heet zo omdat je met helder weer zo’n wijds uitzicht hebt dat je het idee hebt dat je op het einde van de wereld staat. Echter was het weer vandaag erg Brits en hadden we door de dichte mist moeite het einde van het uitkijk platvorm te zien.
+                            </p>
+                            <img class="img-fluid w-50 float-right mr-4 mb-2" src="img/Bestemmingen/Vehalen/Foto boek Sri lanka 3.JPG">
+                            <p>Nu we genoeg van de  mist en de bergen hebben rijden we 4,5 uur naar het zuiden waar een totaal ander landschap op ons te wachten staat. Het is hoer  relatief droog en vlak waardoor het stukken minder groen is en je ineens op een Afrikaanse savanne waant. De diversiteit tussen ‘Little England’ met de kou en regen en dit Afrika-achtige landschap was dus ook weer een unieke ervaring. Wat een contrast. Natuurlijk geen savanne zonder safari dus stond er een Jeep-tocht op het programma om Aziatische olifanten, krokodillen, een arend, apen, en nog wat hertjes (nee nog steeds geen vrouwen) te zien. Die avond werd een outdoordiner voorgeschoteld bij het kampvuur en had Shyam voor ons een wat ‘wiet’ geregeld wat achteraf meer rozemarijn bleekt te bevatten dan THC. 
+                            </p>
+                            <p>Na een rondreis van een dikke week is het nu tijd voor ontspanning en zakken we verder af naar het zuiden naar de kust. In Unawatuna zullen we een aantal dagen van de witte stranden gaan genieten en ons op te laden voor het vrijwilligers werk in het weeshuis. Overdag beetje scooter rijden, surfen en de oude Nederlandse vesting van Galle bezoeken en ’s avonds verse vis van de BBQ op het strand en naar de plaatselijke Beach-bar met Russische vrouwen. Dat ze hier net iets anders rijden dan in Nederland ondervind Butters aan den lijve en hij komt bijna met zijn scooter onder een bus. Het resultaat een middagje prive kliniek en een dikke pleister op zijn kin. In de Beach-bar viert Twat zijn verjaardag en hij wordt getrakteerd op een taart met ‘special ingredient’. Voor ons een leuke avond maar Twat weet er niks meer van. </p>
+                            <p>Na deze ontspannen dagen zijn we voldoende bijgekomen voor het ASSF project in het weeshuis van Balapitya. Hier werden we enorm vriendelijk ontvangen door 17 weeskinderen, die ons direct een witte bloemenkrans om de nek hingen bij binnenkomst. De twee boeddhistische monniken gaven ons een rondleiding en legde uit dat de meeste kinderen hoer wees zijn geworden door de Tsunami een aantal jaren eerder. ‘De avond staat helemaal in het teken van onszelf vinden, van de monnik krijgen we een les mediteren en we bezoeken een boeddhistische dienst in het dorp. Zweverig gedoe maar eigenlijk toch wel een bijzondere, interessante en leerzame ervaring. De volgende ochtend gaan we de weeskinderen les geven over de gebruiken van Nederland delen we dropjes, pepermunt en peperkoek uit en oefenen we Engels. Maar het snoep vinden ze smerig en ze zijn meer geïnteresseerd in onze telefoons om spelletjes te spelen dan de Nederlandse les. Maar toch voor iedereen een erg leuke dag en hopelijk ook toch nog een beetje een leerzame dag. Als kers op de taart planten we een appel boom in de tuin van het weeshuis om de kinderen toch nog iets blijvends mee te geven.
+                            </p>
+                            <img class="img-fluid w-50 float-left mr-4 mb-2" src="img/Bestemmingen/Vehalen/Foto boek Sri lanka 4.JPG">
+                            <p>Uiteindelijk sloten we onze reis af in de hoofdstad Colombo, waar twee Engelse expats ons op sleeptouw nemen naar een van de meest bedenkelijke nachtclubs van de stad waar gewapende mannen rijke VIPS of hun handel bewaakte. Mono bereikt zijn persoonlijke hoogtepunt door een bekje te leggen met een wel erg gewillig  meisje, we peren hem snel voordat haar mannelijke metgezel hier achter komt. </p>
+                            <p>Terugkijkend op de reis mogen we concluderen dat het een enorm bijzondere ervaring is geweest. We hebben het diverse landschap van Sri Lanka mogen ervaren, hebben veel activiteiten ondernomen, zijn in de leer geweest over het boeddhisme en hebben een weeshuis bezocht en de kinderen ontmoet. Al met al een land waar je echt een keer heen moet gaan! </p>
+                            <p>Ayubowan!</p>
+                        </div>
+                    </div>
+                    <!-- Blog Detail End -->
+    
+                  
+    
+                <div class="col-lg-4 mt-5 mt-lg-0">
+                    <!-- Author Bio -->
+                    <div class="d-flex flex-column text-center bg-white mb-5 py-5 px-4">
+                        <img src="img/user.jpg" class="img-fluid mx-auto mb-3" style="width: 100px;">
+                        <h3 class="text-primary mb-3">John Doe</h3>
+                        <p>Conset elitr erat vero dolor ipsum et diam, eos dolor lorem, ipsum sit no ut est  ipsum erat kasd amet elitr</p>
+                        <div class="d-flex justify-content-center">
+                            <a class="text-primary px-2" href="">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a class="text-primary px-2" href="">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a class="text-primary px-2" href="">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                            <a class="text-primary px-2" href="">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a class="text-primary px-2" href="">
+                                <i class="fab fa-youtube"></i>
+                            </a>
+                        </div>
+                    </div>
+    
+                 
+                   
+    
+                    <!-- Recent Post -->
+                   
+    
+                 
+            </div>
+        </div>
+    </div>
+    <!-- Blog End -->
+
+
+    <!-- Footer Start -->
+    <div class="container-fluid bg-dark text-white-50 py-5 px-sm-3 px-lg-5" style="margin-top: 90px;">
+        <div class="row pt-5">
+            <div class="col-lg-3 col-md-6 mb-5">
+                <a href="" class="navbar-brand">
+                    <h1 class="text-primary"><span class="text-white">TRAVEL</span>ER</h1>
+                </a>
+                <p>Sed ipsum clita tempor ipsum ipsum amet sit ipsum lorem amet labore rebum lorem ipsum dolor. No sed vero lorem dolor dolor</p>
+                <h6 class="text-white text-uppercase mt-4 mb-3" style="letter-spacing: 5px;">Follow Us</h6>
+                <div class="d-flex justify-content-start">
+                    <a class="btn btn-outline-primary btn-square mr-2" href="#"><i class="fab fa-twitter"></i></a>
+                    <a class="btn btn-outline-primary btn-square mr-2" href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a class="btn btn-outline-primary btn-square mr-2" href="#"><i class="fab fa-linkedin-in"></i></a>
+                    <a class="btn btn-outline-primary btn-square" href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-5">
+                <h5 class="text-white text-uppercase mb-4" style="letter-spacing: 5px;">Our Services</h5>
+                <div class="d-flex flex-column justify-content-start">
+                    <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>About</a>
+                    <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Destination</a>
+                    <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Services</a>
+                    <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Packages</a>
+                    <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Guides</a>
+                    <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Testimonial</a>
+                    <a class="text-white-50" href="#"><i class="fa fa-angle-right mr-2"></i>Blog</a>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-5">
+                <h5 class="text-white text-uppercase mb-4" style="letter-spacing: 5px;">Usefull Links</h5>
+                <div class="d-flex flex-column justify-content-start">
+                    <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>About</a>
+                    <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Destination</a>
+                    <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Services</a>
+                    <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Packages</a>
+                    <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Guides</a>
+                    <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Testimonial</a>
+                    <a class="text-white-50" href="#"><i class="fa fa-angle-right mr-2"></i>Blog</a>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-5">
+                <h5 class="text-white text-uppercase mb-4" style="letter-spacing: 5px;">Contact Us</h5>
+                <p><i class="fa fa-map-marker-alt mr-2"></i>123 Street, New York, USA</p>
+                <p><i class="fa fa-phone-alt mr-2"></i>+012 345 67890</p>
+                <p><i class="fa fa-envelope mr-2"></i>info@example.com</p>
+                <h6 class="text-white text-uppercase mt-4 mb-3" style="letter-spacing: 5px;">Newsletter</h6>
+                <div class="w-100">
+                    <div class="input-group">
+                        <input type="text" class="form-control border-light" style="padding: 25px;" placeholder="Your Email">
+                        <div class="input-group-append">
+                            <button class="btn btn-primary px-3">Sign Up</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid bg-dark text-white border-top py-4 px-sm-3 px-md-5" style="border-color: rgba(256, 256, 256, .1) !important;">
+        <div class="row">
+            <div class="col-lg-6 text-center text-md-left mb-3 mb-md-0">
+                <p class="m-0 text-white-50">Copyright &copy; <a href="#">Domain</a>. All Rights Reserved.</a>
+                </p>
+            </div>
+            <div class="col-lg-6 text-center text-md-right">
+                <p class="m-0 text-white-50">Designed by <a href="https://htmlcodex.com">HTML Codex</a>
+                </p>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="fa fa-angle-double-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/tempusdominus/js/moment.min.js"></script>
+    <script src="lib/tempusdominus/js/moment-timezone.min.js"></script>
+    <script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
+
+    <!-- Contact Javascript File -->
+    <script src="mail/jqBootstrapValidation.min.js"></script>
+    <script src="mail/contact.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>

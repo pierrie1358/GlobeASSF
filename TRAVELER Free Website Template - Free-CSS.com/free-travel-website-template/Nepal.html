@@ -1,0 +1,295 @@
+<!-- <?php
+    date_default_timezone_set('Europe/Amsterdam')
+?> -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>TRAVELER - Free Travel Website Template</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Free HTML Templates" name="keywords">
+    <meta content="Free HTML Templates" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet"> 
+
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script type='text/javascript' src='https://d3js.org/d3.v3.min.js'></script>
+  <script type='text/javascript' src='https://d3js.org/topojson.v1.min.js'></script>
+  <script type='text/javascript' src='js/planetaryjs.js?v=1'></script>
+  <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
+
+</head>
+
+<body>
+       <!-- Topbar Start -->
+       <div class="container-fluid bg-light pt-3 d-none d-lg-block">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 text-center text-lg-left mb-2 mb-lg-0">
+                    <div class="d-inline-flex align-items-center">
+                        <p><i class="fa fa-envelope mr-2"></i>bestuur@assf.nl</p>
+                        
+                        
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    <!-- Topbar End -->
+
+
+<!-- Navbar Start -->   
+<div class="container-fluid position-relative nav-bar p-0">
+    <div class="container-lg position-relative p-0 px-lg-3" style="z-index: 9;">
+        <nav class="navbar navbar-expand-lg bg-light navbar-light shadow-lg py-3 py-lg-0 pl-3 pl-lg-5">
+            <a href="" class="navbar-brand">
+                <img src="img/logo.png">
+
+            </a>
+            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-between px-3" id="navbarCollapse">
+                <div class="navbar-nav ml-auto py-0">
+                    <a href="index.html" class="nav-item nav-link active">Home</a>
+                    <a href="about.html" class="nav-item nav-link">Over ons</a>
+                    <a href="blog.html" class="nav-item nav-link">Blog</a>
+                    <a href="contact.html" class="nav-item nav-link">Contact</a>
+                </div>
+            </div>
+        </nav>
+    </div>
+</div>
+<!-- Navbar End -->
+
+
+    <!-- Header Start -->
+    <div class="container-fluid page-header">
+        <div class="container">
+            <div class="d-flex flex-column align-items-center justify-content-center" style="min-height: 400px">
+                <h3 class="display-4 text-white text-uppercase">Blog Detail</h3>
+                <div class="d-inline-flex text-white">
+                    <p class="m-0 text-uppercase"><a class="text-white" href="">Home</a></p>
+                    <i class="fa fa-angle-double-right pt-1 px-3"></i>
+                    <p class="m-0 text-uppercase">Blog Detail</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Header End -->
+
+
+    
+
+    <!-- Blog Start -->
+    <div class="container-fluid py-5">
+        <div class="container py-5">
+            <div class="row">
+                <div class="col-lg-12">
+                    <!-- Blog Detail Start -->
+                    <div class="pb-3">
+                        <div class="blog-item">
+                            <div class="position-relative">
+                                
+                                <div class="row">  
+                                    <div class="col-lg-4">    
+                                    <!--Create globe-->  
+                                    <canvas id='rotatingGlobe' width='400' height='400' style="padding-top:40px ;"></canvas>
+                                    <script type='text/javascript' src='globe.js?v=3'></script>
+                                    <script>goto_australia(13)
+                                        goto_australia2(0)
+                                    </script>
+                                </div>
+                                <div class="col-lg-8">
+                                    <img class="img-fluid w-100" src="img/Bestemmingen/istock-530450181.jpg" alt="">   
+                                    
+                                </div>   
+                                </div>
+                                
+                                <div class="blog-date">
+                                    <h6 class="font-weight-bold mb-n1">2018</h6>
+                                    <small class="text-white text-uppercase"></small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bg-white mb-3" style="padding: 60px;">
+                            <div class="d-flex mb-3">
+                                <a class="text-primary text-uppercase text-decoration-none" href="">Admin</a>
+                                <span class="text-primary px-2">|</span>
+                                <a class="text-primary text-uppercase text-decoration-none" href="">Tours & Travel</a>
+                            </div>
+                            <h2 class="mb-3">NEPAL LUSTRUM REIS</h2>
+                            <h4 class="mb-3">Pokhara scooteren</h4>
+                            <img class="img-fluid w-50 float-left mr-4 mb-2" src="img/Bestemmingen/Vehalen/Pokharafoto.JPG">
+                            <p>Na vele avonturen beleefd te hebben kwamen de koeien in Pokhara. Dit prachtige stadje aan een meer had veel te bieden, van cocktail bars tot strandhutjes. Het programma voorzag de keuze om te gaan paragliden in de ochtend. </p>
+                            <p>Echter waren er menig Koeien die hier geen zin in hadden en besloten zelf de dag in te richten door lekker een beetje te scooteren en een rondje om het meer te maken. En zo gingen June, Tinus, Piet en Pop op zoek naar scooters waarmee ze de dag zouden doorbrengen</p>
+                            <p>Na het lang en tevergeefs zoeken, lukte het de mannen om bij een lugubere kleding zaak de scooters te huren. De man van de kledingzaak vroeg de jongens of ze allemaal hun rijbewijs hadden, waarbij Piet uiteraard NIET zijn rijbewijs had. De man vertelde vervolgens dat de boete, voor het niet hebben van een rijbewijs, wel 1600 rupees was ( oftewel 13 euro). Dat konden onze welvarende studenten wel lijden, en zo begonnen de mannen met twee scooters aan het avontuur. 
+                            </p>
+                            <p>Piet kondigde al meteen aan dat hij al “vaker” op de scooter van zijn zus had gereden en dus prima de bestuurder kon zijn. Na vier seconden op de scooter te hebben gezeten, wist Pop al dat dit niet het geval was en dat hij zichzelf in gevaar had gebracht. De vier begonnen te touren over de wegen en kwamen prachtige rijstvelden, koeien en uitzichten tegen. Helaas werd al snel de luxe geasfalteerde weg vervangen door de onverharde, oneven, vol met stenen en modder besmeurde wegen. Niets vermoedend gingen de jongens door. Achteraf valt er natuurlijk te zeggen dat de eerste red flags hadden moeten komen toen ze een rijstveld moesten oversteken. Voor mensen die dit nog nooit gedaan hebben, vrijwel onmogelijk.
+                            </p>
+                            <p> Toen ze, na het oversteken van het rijstveld, aan een local vroegen of een rondje om het meer wel mogelijk was om zo weer terug bij Pokhara te komen, zei de local dat het niet echt verstandig was en dat ze maar beter terug konden keren. Dus de mannen besloten uiteraard om toch een rondje om het meer te maken en vooral niet naar de local te luisteren. Wat vervolgens volgde was een avontuur die ze niet meer zullen vergeten. Door jungle, paden, watervallen en rijstvelden crossen. Deze weg was zo verlaten dat vrijwel nul locals te bekennen waren.
+                            </p>
+                            <img class="img-fluid w-50 float-right mr-4 mb-2" src="img/Bestemmingen/Vehalen/Pokharafoto_2.JPG">
+                            <p> Na drie uur rijden kwamen ze eindelijk bij een verlaten vissers cafeetje aan, waar ze even stopte om te rusten en te genieten van een cola van 30 cent. De eigenaar van het cafeetje was een oude man in de zeventig, die helemaal in zijn eentje in een godvergeten deel van Nepal woonden. De jongens hadden het met de arme man te doen…  totdat de man glimlachend de jongens naar zijn achtertuin begeleidde, waar hij zijn enorme persoonlijke wiet plantage toonde. Toen begrepen ze dat deze glimlachende opa hen de hele tijd zo high als een garnaal aan het serveren was en wel de beste tijd van zijn leven moest hebben. Vooral toen hij zijn pangelese heling methodes toepaste en Piet zijn been ging masseren, toen Piet zojuist bijna met de scooter in de afgerond was gereden en een rots had geraakt.
+                            </p>
+                            <p> De mannen gingen, na het gedag zeggen van Ganja opa, weer op pad. Uren gingen voorbij en het leek geen einde te krijgen. Hadden ze misschien toch moeten luisteren naar de locals bij de rijstvelden? Het begon al donker te worden en de jongens waren uitgeput van de scooters over modder, stenen, bomen en beekjes te tillen. Toen ze de Nepalese equivalent van een eenhoorn zagen wisten ze niet of dat wel een goed of een slecht teken moest zijn. Gelukkig raadden Tinus en June, tot wel drie keer toe, de juiste afslag en wisten ze op een prachtig uitzicht van Pokhara uit te komen. Na uren te hebben gecrossed, hadden de mannen het scooter rijden op alle terreinen en verkeren gemeesterd. Crossend door het verkeer van Pokhara, werd er nog met Pop op volle toeren geflirt door een achterop zittende nepalese vrouw, die Pop voor een welvarende pangel had genomen(Hoe zou dat nou komen?).
+                                Al met al zal niemand van de rest ooit kunnen toegeven dat, ook al zijn zij gaan paragliden, deze vier de aller gaafste Nepal ervaring voor altijd zullen koesteren.
+                                </p>
+                            <h4 class="mb-3">Monniken & voetbal</h4>
+                            <img class="img-fluid w-50 float-left mr-4 mb-2" src="img/Bestemmingen/Vehalen/Foto boek Nepal 4.JPG">
+                            <p>Als je te horen krijgt dat je op vakantie gaat naar Nepal, komen de boeddhistische kriebels meteen al naar boven. Tijdens de lustrum reis zijn we dus uiteraard een tempel gaan bezoeken, waar we vervolgens mochten blijven overnachten. </p>
+                            <p>Als westerling kom je in Nepal aan vol met vooroordelen en verwachtingen, dat het allemaal super rustige mensen zijn en alleen maar bezig zijn met de spiritualiteit. De nieuwste Iphone zou je bij een monnik niet snel vinden, denk je.</p>
+                            <p>Om de ervaring compleet te maken mochten we in kamers van monniken slapen. In het klooster hadden de jongste monniken lege, twee bij twee kamers en hadden de oudere mannen mooie appartementen met meubilair. Mooi om te zien dus, dat anciënniteit in alle geuren en kleuren voorkomt en je het sjaarzen leven, waar ook ter wereld, niet ontsnapt.
+                            </p>
+                            <p>Na een mis te hebben gevolgd wat meer op een oorlog voorbereiding leek en waar Achie in een intensieve meditatie sessie op allerlei inzichten was gekomen, gingen we naar de eetzaal om te eten. Je verwacht natuurlijk ,als echte cultuursnuiver, een overheerlijke authentieke Nepalese maaltijd voorgeschoteld te krijgen, als je dan vervolgens een pasta met ketchup als saus krijgt, dan begin je er toch aan te twijfelen of je niet na het eten ge-iced zal worden door avatar Aang of dat Karma een cornetto op je hoofd zet. </p>
+                            <p>De reis was tijdens het voetbal WK en de dag dat we daar waren, was de dag van de finale tussen Frankrijk en Kroatië. De monniken hadden ons uitgenodigd om de wedstrijd te komen kijken op een beamer. Voor ons was dit een mirakel. We waren namelijk al bang dat er geen mogelijkheid zou zijn geweest om de wedstrijd te zien.</p>
+                            <p>Nadat er veel door Piet aan de beamer, encoder en speakers was gekloot en inmiddels alle jongerejaars van het klooster zich hadden verzameld in de grote tuin begon het grote festijn. Dit was voor alle monniken de enige wedstrijd die zij mochten kijken van de ouderejaars. Zodra het scherm dus aan ging, kwam bij elke monnik de verschuilde Nepalese hooligan in zich naar boven. De helft schreeuwde luidkeels  “MMBAAAPPEEEE OOLLLE OLLLEEE OLLEEE” en de andere helft “MOODDDRRIICCC”. Ik denk dat zelfs een formule een baan qua geluid hier niet aan kan toppen.
+                                Al met al de bijzonderste avond van de hele reis. Ik denk dat weinig mensen zo een herinnering mogen koesteren en dat het een unicum is geweest. Ik weet in ieder geval dat ik voortaan alles wat ik in het westen over andere culturen hoor thuis laat.
+                                </p>
+                            <h5 class="mb-3">Nepali Golf</h5>
+                            <p>Tijdens de vrije dag in Bhaktapur, Nepal, kwam het idee om een golfbaan op te zoeken en een balletje te gaan slaan. Twat, Achy, Bennie en Ernst hadden een fraaie baan gevonden en de taxi richting het Gokarna Golf Resort stond zo voor de deur.</p>
+                            <p>In een taxi - waar chauffeur de Fiat Panda van Bennie als Ferrari zou beschouwen – scheurden we naar de golfbaan toe. De militaire beveiliging bij de ingang van het hotel liet als snel blijken dat wij duidelijk weer een superieure toerist aan het uithangen waren. Vanuit daar door naar de receptie van de golfbaan waarna we een geschikt golfsetje konden uitkiezen. Met 12 ballen in totaal gingen wij er wel vanuit dat dit voldoende moest zijn. Daarna kregen we vier caddies en een ballenzoekster aangewezen kregen en konden we de tocht richting de driving range voortzetten.</p>
+                            
+                            <img class="img-fluid w-50 float-right ml-4 mb-2" src="img/Bestemmingen/Vehalen/IMG_1801.jpg">
+                            <p>Er werd ons daar vriendelijk verzocht om op de rechter kant van de driving range te mikken, want links werden er door een aantal pangels ballen geraakt. Zo zie je maar dat in Nepal niets te gek is. De spieren waren warm en de tee-box van hole 1 werd opgezocht. De teams voor de spelvorm Texas Scramble waren gevormd met Twat & Achy tegen Bennie & Ernst.
+                                Wonder boven wonder werd vrijwel iedere bal terug gevonden door de pangel die alvast op de fairway ging staan om onze waardeloze afslagen te zoeken. Bal na bal werden uit onmogelijk struiken en vijvers gevist om te zorgen dat die fooienpot opliep. De caddies waren erg duidelijk bij de afslag van de volgende hole: je kreeg gewoon een driver in je hand en zij liepen ondertussen door. Daar sta je dan…
+                                </p>
+                            <p>Zo slenterden we tussen de apen (niet alleen de caddies) en de herten over een golfbaan in Nepal. Twat kon het na hole 8 echt niet tot het clubhuis volhouden en heeft in de jungle van Nepal een flinke drol gedraaid waarna hij zijn reet af had geveegd met tropische bladeren. Kort hierna legde hij wel feilloos de bal naast de flag op de par-3 10e hole. Het aantal ballen wat over was bleef afnemen, ondanks de geweldige prestaties van de ballenzoekster. Met nog precies vier  ballen over begonnen we aan de laatste hole. De stand: all square. Gelijkspel, voor het plebs wat niet weet wat A/S betekend. Het factuur voor het rondje bier achteraf komt op het factuur van Twat en Achy. Ernst en Bennie winnen de hole eenvoudig omdat er door de andere twee een meter putt gemist werd.</p>
+                            <h4 class="mb-3">Monniken & voetbal</h4>
+                            <p>Tijdens een avondje op pad met de maiden in Kathmandu waren we op zoek naar een mooie club om het bruisende Nepalese nachtleven eens nader te onderzoeken. Hier stuitten wij op de club Senate, en aangezien je het niet corporaler gaat kunnen vinden in Nepal, besloten wij deze eens van binnen te bezichtigen.</p>
+                            <p>Na eerst stevig onderhandeld te hebben met de portier over de toegangsprijs, ze hebben immers graag zulke knappe, welbedeelde eikeltjes binnen, gingen wij het walhalla binnen. Eenmaal binnen gekomen leek het een beetje alsof we op een middelbare school feestje waren aangekomen; naast de beveiliging was iedereen binnen tenminste een kop kleiner, op de beveiliging na, en zelfs die keken ons aan met een geïmponeerde blik. Het grote voordeel hiervan was dat de weg naar de bar en terug vrij eenvoudig te vinden was. En, ontzettende high rollers als dat wij zijn, de beveiliging hielp ons graag een handje door de weg vrij te banen.</p>
+                            <img class="img-fluid w-50 float-left mr-4 mb-2" src="img/Bestemmingen/Vehalen/senate.jpg">
+                            <p>Toen de mannen (lees: sjaarzen) die bier gingen halen terugkwamen, bleek dat ze alleen blikken bier verkochten. En wat doe je als je in een sjieke club in Nepal 500 mL blikken in je handen gedrukt krijgt? Juist, dan ga je blik koppen. Voor degenen die het niet kennen : men neemt een 500 mL blik, gaat met vrienden in een kring staan. Het blik wordt vervolgens zo hard mogelijk tegen het voorhoofd aan geslagen, en naar de persoon links doorgegeven. Als het blik begint te spuiten zuigt de volgende speler aan de scheur, totdat het spuiten stopt. Het koppen wordt hierna vervolgd, totdat het blik helemaal niet meer spuit. De laatste persoon zorgt dat het blik vervolgens leeg geraakt en deponeert het uiteraard netjes in de afvalbak, of voor de voeten van de beveiliging natuurlijk.</p>
+                            <p>We kregen wel een beetje het idee dat dat spel in Nepal minder populair is, aangezien er weinig locals in wilden haken en we vooral vreemd aangekeken werden. Na een aantal rondes fanatiek geblikkopt te hebben, zagen we dat Sesamstraat al was afgelopen, en het tijd was om huiswaarts te keren. Op de terugweg werden nog de nodige (anti-)slaapliedjes gezongen, waarna wij moe en voldaan in onze bedjes kropen.</p>
+
+                        </div>
+                    </div>
+                    <!-- Blog Detail End -->
+    
+                  
+    
+                
+                 
+                   
+    
+                    <!-- Recent Post -->
+                   
+    
+                 
+            </div>
+        </div>
+    </div>
+    <!-- Blog End -->
+
+
+    <!-- Footer Start -->
+    <div class="container-fluid bg-dark text-white-50 py-5 px-sm-3 px-lg-5" style="margin-top: 90px;">
+        <div class="row pt-5">
+            <div class="col-lg-3 col-md-6 mb-5">
+                <a href="" class="navbar-brand">
+                    <h1 class="text-primary"><span class="text-white">TRAVEL</span>ER</h1>
+                </a>
+                <p>Sed ipsum clita tempor ipsum ipsum amet sit ipsum lorem amet labore rebum lorem ipsum dolor. No sed vero lorem dolor dolor</p>
+                <h6 class="text-white text-uppercase mt-4 mb-3" style="letter-spacing: 5px;">Follow Us</h6>
+                <div class="d-flex justify-content-start">
+                    <a class="btn btn-outline-primary btn-square mr-2" href="#"><i class="fab fa-twitter"></i></a>
+                    <a class="btn btn-outline-primary btn-square mr-2" href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a class="btn btn-outline-primary btn-square mr-2" href="#"><i class="fab fa-linkedin-in"></i></a>
+                    <a class="btn btn-outline-primary btn-square" href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-5">
+                <h5 class="text-white text-uppercase mb-4" style="letter-spacing: 5px;">Our Services</h5>
+                <div class="d-flex flex-column justify-content-start">
+                    <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>About</a>
+                    <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Destination</a>
+                    <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Services</a>
+                    <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Packages</a>
+                    <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Guides</a>
+                    <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Testimonial</a>
+                    <a class="text-white-50" href="#"><i class="fa fa-angle-right mr-2"></i>Blog</a>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-5">
+                <h5 class="text-white text-uppercase mb-4" style="letter-spacing: 5px;">Usefull Links</h5>
+                <div class="d-flex flex-column justify-content-start">
+                    <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>About</a>
+                    <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Destination</a>
+                    <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Services</a>
+                    <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Packages</a>
+                    <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Guides</a>
+                    <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Testimonial</a>
+                    <a class="text-white-50" href="#"><i class="fa fa-angle-right mr-2"></i>Blog</a>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-5">
+                <h5 class="text-white text-uppercase mb-4" style="letter-spacing: 5px;">Contact Us</h5>
+                <p><i class="fa fa-map-marker-alt mr-2"></i>123 Street, New York, USA</p>
+                <p><i class="fa fa-phone-alt mr-2"></i>+012 345 67890</p>
+                <p><i class="fa fa-envelope mr-2"></i>info@example.com</p>
+                <h6 class="text-white text-uppercase mt-4 mb-3" style="letter-spacing: 5px;">Newsletter</h6>
+                <div class="w-100">
+                    <div class="input-group">
+                        <input type="text" class="form-control border-light" style="padding: 25px;" placeholder="Your Email">
+                        <div class="input-group-append">
+                            <button class="btn btn-primary px-3">Sign Up</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid bg-dark text-white border-top py-4 px-sm-3 px-md-5" style="border-color: rgba(256, 256, 256, .1) !important;">
+        <div class="row">
+            <div class="col-lg-6 text-center text-md-left mb-3 mb-md-0">
+                <p class="m-0 text-white-50">Copyright &copy; <a href="#">Domain</a>. All Rights Reserved.</a>
+                </p>
+            </div>
+            <div class="col-lg-6 text-center text-md-right">
+                <p class="m-0 text-white-50">Designed by <a href="https://htmlcodex.com">HTML Codex</a>
+                </p>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="fa fa-angle-double-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/tempusdominus/js/moment.min.js"></script>
+    <script src="lib/tempusdominus/js/moment-timezone.min.js"></script>
+    <script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
+
+    <!-- Contact Javascript File -->
+    <script src="mail/jqBootstrapValidation.min.js"></script>
+    <script src="mail/contact.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
