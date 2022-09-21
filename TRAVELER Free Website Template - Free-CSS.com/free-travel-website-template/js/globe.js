@@ -8,7 +8,7 @@
 $.ajaxSettings.async = false;
 var countries;
  var country_pings;
- var desired_countries=["Nepal","Sri Lanka","Vietnam","South Africa","Brazil","Australia","Nicaragua","New Zealand","Mexico","United States","United Kingdom","United Arab Emirates","China","Spain","Philippines","Thailand","Zambia","Hong Kong","India","Lithuania","Russia"]; // Hier kunnen de landen toegevoegd worden waar pings aan toegevoegd moeten worden, plekken waar we zijn geweest
+ var desired_countries=["Nepal","Sri Lanka","Vietnam","South Africa","Brazil","Australia","Nicaragua","New Zealand","Mexico","United States","United Kingdom","United Arab Emirates","China","Spain","Philippines","Thailand","Zambia","Hong Kong","India","Lithuania"]; // Hier kunnen de landen toegevoegd worden waar pings aan toegevoegd moeten worden, plekken waar we zijn geweest
  var lat = [];
  var lng = [];
  var wdth=window.screen.width;
