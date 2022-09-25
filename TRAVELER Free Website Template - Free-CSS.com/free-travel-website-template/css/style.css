@@ -9140,7 +9140,7 @@ button.bg-dark:focus {
   content: "";
   background-color: rgba(0, 0, 0, 0);
 }
-
+.shadow-lado{color: white ; text-shadow: 2px 2px 5px black;}
 .text-monospace {
   font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !important;
 }
