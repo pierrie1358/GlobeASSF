@@ -24,6 +24,7 @@ for(let i=0;i<country_pings.length;++i)
 
 
  }
+ lat.push(41.4);lng.push(2.16);
 });
 var globe = planetaryjs.planet();
     // Load our custom `autorotate` plugin; see below.
