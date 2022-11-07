@@ -8,7 +8,12 @@
 $.ajaxSettings.async = false;
 var countries;
  var country_pings;
+ // Landen moeten aangevuld worden
  var desired_countries=["Nepal","Sri Lanka","Vietnam","South Africa","Brazil","Australia","Nicaragua","New Zealand","Mexico","United States","United Kingdom","United Arab Emirates","China","Spain","Philippines","Thailand","Zambia","Hong Kong","India","Lithuania"]; // Hier kunnen de landen toegevoegd worden waar pings aan toegevoegd moeten worden, plekken waar we zijn geweest
+ // Steden moeten hier aangevuld worden let op dat je ook de landcode onder toevoegd je hebt namelijk meerder steden met dezelfde in andere landen...
+ var city = ["New York City","Barcelona"];
+ var city_country=["US","ES"];
+ var city_order=[];
  var lat = [];
  var lng = [];
  var wdth=window.screen.width;
@@ -17,15 +22,34 @@ $.getJSON("https://gist.githubusercontent.com/erdem/8c7d26765831d0f9a8c62f02782a
 countries= json;
 country_pings=countries.filter(count => {if(desired_countries.includes(count.name)) return count});
 
+
+
 for(let i=0;i<country_pings.length;++i)
  {
    lat.push(country_pings[i].latlng[0]);
    lng.push(country_pings[i].latlng[1]);
-
-
  }
- lat.push(41.4);lng.push(2.16);
+ 
+
+ 
 });
+$.getJSON("https://raw.githubusercontent.com/lutangar/cities.json/master/cities.json", function(json){
+cities= json;
+city_pings=cities.filter(count => {if(city.includes(count.name)) return count});
+for(let i=0;i<city_pings.length;++i)
+{ 
+  
+    if(city.indexOf(city_pings[i].name)==city_country.indexOf(city_pings[i].country)) 
+    {
+      city_order.push(city[city.indexOf(city_pings[i].name)]);
+      lat.push(Math.round(city_pings[i].lat*10)/10);
+      lng.push(Math.round(city_pings[i].lng*10)/10);
+    }
+  
+}
+ 
+});
+
 var globe = planetaryjs.planet();
     // Load our custom `autorotate` plugin; see below.
     globe.loadPlugin(autorotate(10));
@@ -39,7 +63,7 @@ var globe = planetaryjs.planet();
       topojson: { file:   'world-110m-withlakes.json' },
       oceans:   { fill:   '#e9f6e5' },
       land:     { fill:   '#f89b2e' },
-      borders:  { stroke: '#84d1c6' } //#f7931e 08a0cc
+      borders:  { stroke: '#84d1c6' } //#f7931 08a0cc
     }));
     // Load our custom `lakes` plugin to draw lakes; see below.
     globe.loadPlugin(lakes({
@@ -100,12 +124,25 @@ var globe = planetaryjs.planet();
     
     // Special code to handle high-density displays (e.g. retina, some phones)
     // In the future, Planetary.js will handle this by itself (or via a plugin).
-    if (window.devicePixelRatio == 2) {
-      canvas.width = 800;
-      canvas.height = 800;
+    // if (window.devicePixelRatio < 2) 
+    
+      if (wdth<1000)
+      {
+        canvas.width = 0.9*wdth;
+        canvas.height = 0.9*wdth;
       context = canvas.getContext('2d');
-      context.scale(2, 2);
-    }
+      context.scale(0.9,0.9);
+      }
+      else
+      {
+        canvas.width = 0.2*wdth;
+        canvas.height = 0.2*wdth;
+        context = canvas.getContext('2d');
+        context.scale(1,1);
+      }
+      
+    
+    
     // Draw that globe!
     globe.draw(canvas);
     
@@ -149,16 +186,24 @@ var globe = planetaryjs.planet();
     };
   
     // Dit is de functie om naar een specifiek land te gaan
-    function goto_australia(lt) {
-                  if(wdth>700){
-                  var ltas=lt-1;
+    function goto_australia(name) {
+                  if(desired_countries.indexOf(name)>-1)
+                   lt=country_pings.findIndex(count => {if([name].includes(count.name)) return count});
+                  else if(city.indexOf(name)>-1)
+                   {
+                    lt=desired_countries.length+ city_order.indexOf(name);
+                   }
+                  else lt=0;
+                  
+                  
+                  var ltas=lt;
                   var finaldest=[];
                   if(ltas>=0){
                   finaldest.push(-lng[ltas]);
                   finaldest.push(-lat[ltas]);
                   finaldest.push(0);
                   globe.plugins.autorotate.pause();
-                  var changevelo=5000;
+                  var changevelo=1;
                   var changing=[0,0,0];
                   for (let i=0;i<finaldest.length;++i)
                 {
@@ -206,7 +251,7 @@ var globe = planetaryjs.planet();
                 }
                    
           
-                 return 123; }};
+                 return 123; };
        
     
   
@@ -218,6 +263,26 @@ var globe = planetaryjs.planet();
       
 
 
+    
+
+
+
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
     // This plugin takes lake data from the special
     // TopoJSON we're loading and draws them on the map.
     function lakes(options) {
