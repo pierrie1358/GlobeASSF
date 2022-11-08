@@ -131,12 +131,13 @@ var globe = planetaryjs.planet();
         canvas.width = 0.9*wdth;
         canvas.height = 0.9*wdth;
       context = canvas.getContext('2d');
-      context.scale(0.9,0.9);
+      context.scale(0.8,0.8);
       }
       else
       {
         canvas.width = 0.2*wdth;
         canvas.height = 0.2*wdth;
+        
         context = canvas.getContext('2d');
         context.scale(1,1);
       }

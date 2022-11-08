@@ -24,9 +24,10 @@
     <!-- Libraries Stylesheet -->
     <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
     <link href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
-
+    
     <!-- Customized Bootstrap Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
+    <link href="css/modal.css?v=3" rel="stylesheet">
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script type='text/javascript' src='https://d3js.org/d3.v3.min.js'></script>
@@ -131,30 +132,39 @@
                                 </div>
                                 
                                 <div class="blog-date">
-                                    <h6 class="font-weight-bold mb-n1">2021</h6>
+                                    <h6 class=" text-white font-weight-bold mb-n1">2021</h6>
                                     <small class="text-white text-uppercase"></small>
                                 </div>
                             </div>
                         </div>
                         <div class="bg-white mb-5" style="padding: 20px;">
                             <div class="d-flex mb-3">
-                                <a class="text-primary text-uppercase text-decoration-none" href="">Admin</a>
+                                <span class="text-primary text-uppercase text-decoration-none" href="">Jan</span>
                                 <span class="text-primary px-2">|</span>
-                                <a class="text-primary text-uppercase text-decoration-none" href="">Tours & Travel</a>
+                                <span class="text-primary text-uppercase text-decoration-none" href="">2015</span>
                             </div>
                             <h2 class="mb-3">BARCELONA EXCHANGE</h2>
+                            
                             <h4 class="mb-3">Catalaanse onafhankelijkheid</h4>
-                            <img class="img-fluid w-50 float-left mr-4 mb-2" src="img/Bestemmingen/Vehalen/Barcelona/barca1.jpg">
+                            <img class="img-fluid w-50 float-left mr-4 mb-2 modal2-hover-opacity" src="img/Bestemmingen/Vehalen/Barcelona/barca1.jpg" onclick="onClick(this)">
                             <p>In 2021 was tijdelijk de wereldwijde COVID-19 pandemie even voorbij, tenminste dat leek zo. Maar ik mocht tijdens mijn master in ieder geval op exchange naar het buitenland. Barcelona was de bestemming.</p>
                             <p>Tijdens mijn geweldige periode in Barcelona kwam ik al snel achter de enorme spanning die heerst tussen de voor- en tegenstanders van de onafhankelijkheid van Catalonië. Dat ik s ’avonds tegen lokale studenten vol trots vertelde dat ik Spaans aan het leren was, werd mij bijvoorbeeld niet in dank afgenomen: ‘waarom leer je niet Catalaans, je bent toch in Barcelona?’. Maar ook tijdens de vakken die ik volgde aan de universiteit kwam ik erachter dat er een hoop wrok nog steeds is naar Madrid en de Spaanse regering.</p>
-                            <img class="img-fluid w-50 float-right mr-4 mb-2" src="img/Bestemmingen/Vehalen/Barcelona/barca4.jpg">
+                            
+                            <img  class="img-fluid w-50 float-right mr-4 mb-2 modal2-hover-opacity" src="img/Bestemmingen/Vehalen/Barcelona/barca4.jpg" onclick="onClick(this)">
 
                             <p>We moesten leren wat voor slechte investering het aangelegde treinnetwerk was van alle hoofdsteden naar Madrid. Terwijl dit te dure project werd betaald van het belastinggeld uit Barcelona, de ‘belangrijkste’ stad van Spanje. Ik raakte steeds meer verdiept in het onderwerp, en maakte mee hoe er nog steeds wekelijks rellen waren in de stad, als protest tegen het onrecht dat men en haar familie is aangedaan. Ik wilde meer te weten komen waar het gevoel van onafhankelijkheid vandaan kwam, want economisch gezien is er geen positief aspect van onafhankelijkheid.</p>
                             <p>Ik sprak met enkele families die tegen onafhankelijkheid waren. In deze families wil men vooral naar de toekomst kijken, van hun en hun toekomstige kinderen. De strijd zorgt juist alleen maar voor verdeeldheid en ruzies in de stad Barcelona. Als Catalonië onafhankelijk wordt zullen bovendien meer bedrijven vertrekken uit Barcelona, de euro verdwijnen en zal men opnieuw tot de EU moeten toetreden, wat jaren kan duren. Daarom was ik juist weten waarom nog steeds 50% van Catalonië alsnog voor de onafhankelijk is. </p>
-                            <img class="img-fluid w-25 float-left mr-4 mb-2" src="img/Bestemmingen/Vehalen/Barcelona/barca2.jpg">
+                            
+                            <img id="myImg3" class="img-fluid w-25 float-left mr-4 mb-2" src="img/Bestemmingen/Vehalen/Barcelona/barca2.jpg" onclick="onClick(this)">
                             <p>Deze zoektocht resulteerde in het hoogtepunt van mijn ASSF project, wat ontstond nadat ik in contact was gekomen met de grootste organisatie van onafhankelijkheid, die mij uitnodigde om een weekend mee te komen tijdens de jaarlijkse herdenking van de dag dat men onafhankelijk had moeten worden. Dit weekend bestond uit een protestconcert in Figueres, een mars van 25km door Girona met 10.000 man en een demonstratie in Barcelona zelf. Tijdens dit weekend, wat begon toch wel helemaal alleen tussen veel niet Engels sprekende Catalanen, heb ik ontzettend veel mooie, lieve mensen leren kennen en gesproken, waaronder zelfs de ex-voorzitter van Catalonië. Ik heb enorm veel geleerd over de wrok en afkeer die men heeft tegen de staat. Vaak herinnerden families mij aan familieleden die werden geslagen door de politie, of zelfs werden opgepakt omdat ze gingen stemmen. Ze werden verboden om hun eigen taal te spreken. Madrid legt Catalonië nog steeds alles op en men is klaar met het in de macht liggen van anderen. Vaak voelde men nog steeds de pijn van vroeger en werden gesprekken emotioneel. Al met al maakte dit weekend mijn exchange periode een enorm unieke leef- en leerervaring, die ik nooit meer ga vergeten.</p>
                             
+                            <div id="modal01" class="modal2" onclick="this.style.display='none'">
+                                <span class="close">&times;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                                <div class="modal2-content">
+                                  <img id="img01" style="max-width:100%">
+                                </div>
                         </div>
+                        
                     </div>
                     <!-- Blog Detail End -->
     
@@ -239,9 +249,12 @@
     <!-- Contact Javascript File -->
     <script src="mail/jqBootstrapValidation.min.js"></script>
     <script src="mail/contact.js"></script>
+    <script src="js/modal.js"></script>
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
+    
+    
 </body>
 
 </html>

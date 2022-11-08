@@ -27,12 +27,14 @@
 
     <!-- Customized Bootstrap Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
+    <link href="css/modal.css?v=3" rel="stylesheet">
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script type='text/javascript' src='https://d3js.org/d3.v3.min.js'></script>
     <script type='text/javascript' src='https://d3js.org/topojson.v1.min.js'></script>
     <script type='text/javascript' src='js/planetaryjs.js?v=1'></script>
     <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
+    
   
 </head>
 
@@ -135,36 +137,46 @@
                         </div>
                         <div class="bg-white mb-5" style="padding: 20px;">
                             <div class="d-flex mb-3">
-                                <a class="text-primary text-uppercase text-decoration-none" href="">Admin</a>
+                                <a class="text-primary text-uppercase text-decoration-none" href="">Dispuut</a>
                                 <span class="text-primary px-2">|</span>
-                                <a class="text-primary text-uppercase text-decoration-none" href="">Tours & Travel</a>
+                                <a class="text-primary text-uppercase text-decoration-none" href="">2006 - 2012</a>
                             </div>
                             <h2 class="mb-3">SRI LANKA LUSTRUM REIS</h2>
+                            <div id="myModal" class="modal">
+                                <span class="close">&times;</span>
+                                <img class="modal-content" id="img01">
+                                <div id="caption"></div>
+                              </div>
                             <h4 class="mb-3">Reis verslag</h4>
-                            <img class="img-fluid w-50 float-right mr-4 mb-2" src="img/Bestemmingen/Vehalen/Foto boek Sri lanka.JPG">
+                            <img id="myImg" class="img-fluid w-50 float-right mr-4 mb-2 modal2-hover-opacity" src="img/Bestemmingen/Vehalen/Foto boek Sri lanka.JPG" onclick="onClick(this)">
                             <p>Van 26 juli t/m 10 augustus 2013 zijn we met 17 man sterk op lustrumreis geweest om het 45 jarige bestaan van de club te vieren. Voor velen was de bestemming tot aankomst op Schiphol Airport nog onbekend. Aldaar werd het dan toch duidelijk dat niet India en Myanmar de bestemming gingen worden maar… SRI LANKA, Pöckl had het uiteindelijk toch goed geprikt! Na een ontspannen vlucht in de A380 met overstap in Dubai arriveerde we in s’ochtends in Colombo, de ‘commerciële’ hoofdstad van Sri Lanka. Hier ontmoetten we Shyam (onze gids), Big Belly Buddha (de tassen drager) en onze chauffeur we werden naar onze eigen prive bus gebracht. De reis kan beginnen!
                             </p>
                             <p>Vanaf het vliegveld reden we naar het vissersdorpje Negombo. Na wat slaap te hebben ingehaald op het strand en de eerste duik van de vakantie gingen we op excursie in het stadje om de eerste indrukken op te doen. Opvallende was de vele vis die lag te drogen op het strand en op de vismarkt en de Nederlandse invloeden nog goed terug te zien zijn in het straatbeeld. De  grachten en gebouwen die vanaf 1640 gebouwd zijn tijdens de Nederlandse kolonisatie sprongen direct in het oog. Daarnaast was het ouder fort omgebouwd tot gevangenis maar door gids nog steeds bestempeld als onneembaar; ‘easy to check-in, difficult to check-out’. En zo was meteen de eerste quote van de trip geboren. 
                             </p>
                             <p>De volgende morgen lieten we de kust achter ons en trokken we het binnenland in om de Cave-temple nabij Dambulla te bezoeken. Zoals de naam al zegt is deze tempel bijzonder omdat hij helemaal uit een rotswand is gehakt, in de verschillende grotten en nissen staan tientallen grote Boeddha beelden. Na deze eerste kennismaking met het boeddhisme reden we door naar ons hotel waar we overdag een mountainbike toch maakte en ’s avonds een BBQ hielden. Hierbij werd meteen duidelijk dat de 17 studenten uit Nederland toch wat meer bier drinken en peuken roken dan de gemiddelde toerrist en moesten de hotelmedewerkers bij iedereen in de omgeving langs om de voorraden te plunderen. Hierna heeft Shyam al de hotels en restaurants gebeld waar we deze reis nog naar toe zouden gaan om te waarschuwen dat we zouden komen om er voor te zorgen dat er voldoende bier in huis was. De beste sjaars in jaren!
                             </p>
-                            <img class="img-fluid w-50 float-left mr-4 mb-2" src="img/Bestemmingen/Vehalen/Foto boek Sri lanka 2.JPG">
+                            <img id="myImg" class="img-fluid w-50 float-left mr-4 mb-2 modal2-hover-opacity" src="img/Bestemmingen/Vehalen/Foto boek Sri lanka 2.JPG" onclick="onClick(this)">
                             <p>Op dag drie stonden we met een flinke kater en frisse tegenzin op om Sigiriya Rock Fortress bezoeken. De kater was al sneeuw in de brandende Sri Lankaanse zon verdwenen toen we  deze 200 meter hoge  Unesco werelderfgoed site hadden beklommen. Het uitzicht over de omgeving met eeuwenoude Koninklijke tuinen, zwembaden en grachten was een adembenemend en het is te begrijpen dat dit de plek is waar vroeger het koninklijk paleis heeft gestaan. Op de terugweg bleek dat de  vroegere koning het pad omlaag had laten versieren met naakt schilderingen van zijn favoriete vrouwen. Bekaf van de beklimming van die ochtend hebben we gechilld aan het zwembad en ’s avonds een ‘Beer-Pong’ toernooi opgezet. Hier werd maar weer eens al te goed duidelijk hoe fanatiek sommige Audumla’s kunnen zijn als het gaat om ‘winnen’! Uiteindelijk is Docty er met de winst vandoor gegaan maar gingen een aantal andere toch met sippe gezichtjes naar bed. 
                             </p>
                             <p>De volgende halte was Kandy waar we een van de meest belangrijke boeddhistische tempel van de wereld bezochten: de Temple of Tooth. De plaatselijke bevolking geloofd dat hier de tand van Boeddha bewaard ligt en daarom hebben ze een vrij indrukwekkende houten tempel gebouwd. Maar wat ons in Kandy allemaal het meest bij zal blijven zijn de vele wetkantoren waar op honden en paarde racen gewet kan worden.  Vooral Twat onze platina member van het Holland Casino kon zich hier helemaal uitleven vergokte al zijn zakgeld voor de komende week. Vanuit Kandy namen we de trein naar Horton Plains voor een van de mooiste treintrajecten ter wereld, Railaway in het echt, zeer indrukwekkend! Maar we hadden onze dosis natuur nog niet gehad want voor we konden gaan chillen in onze blokhutjes bij de rafters retreat  stond er nog een pittige rafttocht over de rivier op het programma met als hoogte punt de brug waar de Hollywood klassieker Bridge over the river Kwai is opgenomen. Opnieuw werden we ondergedompeld in de schoonheid van de Sri Lankaanse jungle. De keerzijde van de jungle werd ons ook duidelijk door de enorme spinnen in onze douches en de dodelijke slangen onder de ontbijt tafel.
                             </p>
                             <p>Next stop: Nuwara Eliya, dit plaatsje ligt op zo’n 2.000 meter hoogte midden in de bergen. Omdat het hier koud regenachtig en mistig is was deze stad vroeger in trek bij rijke Britse kolonisten met heimwee. Dit zorgt ervoor dat Nuwara Eliya nog steeds de grandeuren de  vergane glorie van het Britse rijk uitademt. Hier hebben we ons dan ook even gedragen als de corpsballetjes: een rondje golfen voor de sportievelingen en ’s avonds  jasje-dasje diner in ‘The Hill Club’ met afsluitende cognac en sigaren in de ‘The Gentlemans lounche’. De volgende ochtend moesten we vroeg op om te worden geconfronteerd met de grootse deceptie van de reis. Na een wandeltocht van een paar uur arriveerde we bij ‘Worlds End’, dit uitkijk punt heet zo omdat je met helder weer zo’n wijds uitzicht hebt dat je het idee hebt dat je op het einde van de wereld staat. Echter was het weer vandaag erg Brits en hadden we door de dichte mist moeite het einde van het uitkijk platvorm te zien.
                             </p>
-                            <img class="img-fluid w-50 float-right mr-4 mb-2" src="img/Bestemmingen/Vehalen/Foto boek Sri lanka 3.JPG">
+                            <img id="myImg" class="img-fluid w-50 float-right mr-4 mb-2 modal2-hover-opacity" src="img/Bestemmingen/Vehalen/Foto boek Sri lanka 3.JPG" onclick="onClick(this)">
                             <p>Nu we genoeg van de  mist en de bergen hebben rijden we 4,5 uur naar het zuiden waar een totaal ander landschap op ons te wachten staat. Het is hoer  relatief droog en vlak waardoor het stukken minder groen is en je ineens op een Afrikaanse savanne waant. De diversiteit tussen ‘Little England’ met de kou en regen en dit Afrika-achtige landschap was dus ook weer een unieke ervaring. Wat een contrast. Natuurlijk geen savanne zonder safari dus stond er een Jeep-tocht op het programma om Aziatische olifanten, krokodillen, een arend, apen, en nog wat hertjes (nee nog steeds geen vrouwen) te zien. Die avond werd een outdoordiner voorgeschoteld bij het kampvuur en had Shyam voor ons een wat ‘wiet’ geregeld wat achteraf meer rozemarijn bleekt te bevatten dan THC. 
                             </p>
                             <p>Na een rondreis van een dikke week is het nu tijd voor ontspanning en zakken we verder af naar het zuiden naar de kust. In Unawatuna zullen we een aantal dagen van de witte stranden gaan genieten en ons op te laden voor het vrijwilligers werk in het weeshuis. Overdag beetje scooter rijden, surfen en de oude Nederlandse vesting van Galle bezoeken en ’s avonds verse vis van de BBQ op het strand en naar de plaatselijke Beach-bar met Russische vrouwen. Dat ze hier net iets anders rijden dan in Nederland ondervind Butters aan den lijve en hij komt bijna met zijn scooter onder een bus. Het resultaat een middagje prive kliniek en een dikke pleister op zijn kin. In de Beach-bar viert Twat zijn verjaardag en hij wordt getrakteerd op een taart met ‘special ingredient’. Voor ons een leuke avond maar Twat weet er niks meer van. </p>
                             <p>Na deze ontspannen dagen zijn we voldoende bijgekomen voor het ASSF project in het weeshuis van Balapitya. Hier werden we enorm vriendelijk ontvangen door 17 weeskinderen, die ons direct een witte bloemenkrans om de nek hingen bij binnenkomst. De twee boeddhistische monniken gaven ons een rondleiding en legde uit dat de meeste kinderen hoer wees zijn geworden door de Tsunami een aantal jaren eerder. ‘De avond staat helemaal in het teken van onszelf vinden, van de monnik krijgen we een les mediteren en we bezoeken een boeddhistische dienst in het dorp. Zweverig gedoe maar eigenlijk toch wel een bijzondere, interessante en leerzame ervaring. De volgende ochtend gaan we de weeskinderen les geven over de gebruiken van Nederland delen we dropjes, pepermunt en peperkoek uit en oefenen we Engels. Maar het snoep vinden ze smerig en ze zijn meer geïnteresseerd in onze telefoons om spelletjes te spelen dan de Nederlandse les. Maar toch voor iedereen een erg leuke dag en hopelijk ook toch nog een beetje een leerzame dag. Als kers op de taart planten we een appel boom in de tuin van het weeshuis om de kinderen toch nog iets blijvends mee te geven.
                             </p>
-                            <img class="img-fluid w-50 float-left mr-4 mb-2" src="img/Bestemmingen/Vehalen/Foto boek Sri lanka 4.JPG">
+                            <img id="myImg" class="img-fluid w-50 float-left mr-4 mb-2 modal2-hover-opacity" src="img/Bestemmingen/Vehalen/Foto boek Sri lanka 4.JPG" onclick="onClick(this)">
                             <p>Uiteindelijk sloten we onze reis af in de hoofdstad Colombo, waar twee Engelse expats ons op sleeptouw nemen naar een van de meest bedenkelijke nachtclubs van de stad waar gewapende mannen rijke VIPS of hun handel bewaakte. Mono bereikt zijn persoonlijke hoogtepunt door een bekje te leggen met een wel erg gewillig  meisje, we peren hem snel voordat haar mannelijke metgezel hier achter komt. </p>
                             <p>Terugkijkend op de reis mogen we concluderen dat het een enorm bijzondere ervaring is geweest. We hebben het diverse landschap van Sri Lanka mogen ervaren, hebben veel activiteiten ondernomen, zijn in de leer geweest over het boeddhisme en hebben een weeshuis bezocht en de kinderen ontmoet. Al met al een land waar je echt een keer heen moet gaan! </p>
                             <p>Ayubowan!</p>
+                            <div id="modal01" class="modal2" onclick="this.style.display='none'">
+                                <span class="close">&times;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                                <div class="modal2-content">
+                                  <img id="img01" style="max-width:100%">
+                                </div>
                         </div>
                     </div>
                     <!-- Blog Detail End -->
@@ -279,6 +291,7 @@
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
+    <script src="js/modal.js"></script>
 </body>
 
 </html>

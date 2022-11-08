@@ -27,12 +27,15 @@
 
     <!-- Customized Bootstrap Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
+    <link href="css/modal.css?v=3" rel="stylesheet">
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script type='text/javascript' src='https://d3js.org/d3.v3.min.js'></script>
   <script type='text/javascript' src='https://d3js.org/topojson.v1.min.js'></script>
   <script type='text/javascript' src='js/planetaryjs.js?v=1'></script>
   <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
+  
+  
 
 </head>
 
@@ -136,21 +139,25 @@
                         </div>
                         <div class="bg-white mb-5" style="padding: 20px;">
                             <div class="d-flex mb-3">
-                                <a class="text-primary text-uppercase text-decoration-none" href="">Admin</a>
+                                <a class="text-primary text-uppercase text-decoration-none" href="">Octo</a>
                                 <span class="text-primary px-2">|</span>
-                                <a class="text-primary text-uppercase text-decoration-none" href="">Tours & Travel</a>
+                                <a class="text-primary text-uppercase text-decoration-none" href="">2009</a>
                             </div>
                             <h2 class="mb-3">NEW YORK</h2><!--PAS AAN -->
                             <h4 class="mb-3">Foodbank of New York City </h4><!--PAS AAN -->
-                            <img class="img-fluid w-25 float-left mr-4 mb-2" src="img/Bestemmingen/Vehalen/Octo/octo1.jpg">
+                            <img class="img-fluid w-25 float-left mr-4 mb-2 modal2-hover-opacity" src="img/Bestemmingen/Vehalen/Octo/octo1.jpg" onclick="onClick(this)">
                             <p>In New York heb ik gedurende drie maanden gewerkt bij de voedselbank. Op verschillende dagdelen hielp ik in de Harlem Community Kitchen en de Brooklyn Community Gardens. Op deze manier was ik in contact met mensen die het moeilijk hadden om rond te komen en leerde ik veel over community work in NYC. Dit heeft me een hele andere kant van New York leren kennen.</p>
                             <p>De eerste keer werken in de Community Kitchen was voor mij spannend. Er stond al een lange rij mensen te wachten en hier moest ik me langs wurmen om binnen te komen. De eerste keer wilde ik hierom bijna doorlopen. Ik ben blij dat ik dit niet heb gedaan en zo in aanraking ben gekomen met de voedselbank in New York. Het heeft mij laten zien dat er in New York een structureel probleem is van te hoge kosten van levensonderhoud tegenover te lage lonen. 1,5 miljoen New Yorkers zijn afhankelijk van de voedselbank*. Ter vergelijking gebruiken in heel Nederland 160.000 de voedselbank.</p>
 
-                            <img class="img-fluid w-25 float-right mr-4 mb-2" src="img/Bestemmingen/Vehalen/Octo/octo2.jpg">
+                            <img class="img-fluid w-25 float-right mr-4 mb-2 modal2-hover-opacity" src="img/Bestemmingen/Vehalen/Octo/octo2.jpg" onclick="onClick(this)">
                             <p>Tegenover deze schijnende cijfers merkte ik in de gesprekken met de vrijwilligers dat er wel een hoge sociale verantwoordelijk heerst. Men zag het als iets normaals om als vrijwilliger te helpen. Dat hoorde je als goede burger te doen kreeg ik te horen. Zo waren er ook vrijwilligers van jong tot oud. Van scholieren en studenten tot ouders en opa’s en oma’s. Mooi om te voelen dat mensen zelf het heft handen nemen op het moment dat het sociale vangnet vanuit de overheid niet toereikend is.</p>
                             <p>Het is een speciale ervaring voor mij geweest om te werken op plekken in New York waar ik normaal niet snel zou komen. Diep in Harlem en Brooklyn in de minder goede wijken. Dat elke locatie de eerste keer spannend voelde geeft aan hoe ik uit mijn comfort zone ben gestapt. Gesprekken met vrijwilligers en daklozen hebben mij kanten van het leven laten inzien waar ik eerder niet bij stil stond. Het is heftig als je met iemand spreekt met een beurs geslagen gezicht die zegt. “Ik heb voor mezelf moeten opkomen. Als je dat niet doet pakken ze alles van je af”. Deze man was vervolgens ook heel geïnteresseerd in mij en ik heb echt goede gesprekken met hem kunnen voeren over het “echte” leven. </p>
                             
-                            
+                            <div id="modal01" class="modal2" onclick="this.style.display='none'">
+                                <span class="close">&times;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                                <div class="modal2-content">
+                                  <img id="img01" style="max-width:100%">
+                                </div>
                         </div>
                     </div>
                     <!-- Blog Detail End -->
@@ -239,6 +246,7 @@
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
+    <script src="js/modal.js"></script>
 </body>
 
 </html>
